@@ -19,7 +19,6 @@ public class DBConfig {
 
         dataSource.setUsername("root");
         dataSource.setPassword("dkdlxl123");
-
         return dataSource;
     }
 }

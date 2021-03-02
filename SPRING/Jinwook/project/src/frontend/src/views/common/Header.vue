@@ -3,7 +3,20 @@
     <v-app-bar app clipped-right color="grey" black>
         <v-app-bar-nav-icon @click="drawer = true">
         </v-app-bar-nav-icon>
-        <slot name="menubar"></slot>
+        <div class="gnb-left">
+            <v-btn @click="home()">Indiedog</v-btn>
+        </div> 
+        <div class="gnb-center">
+            <v-btn @click="start('society')">All Game</v-btn>
+            <v-btn @click="start('society')">Cloud Game</v-btn>
+            <v-btn @click="totalCommunity()">Cloud Game</v-btn>
+        </div>
+        <div class="gnb-right">
+        <v-btn @click="totalCommunity()" text color="white">Language</v-btn>
+        <v-btn @click="home()" text color="white">Totalmenu</v-btn>
+        <v-btn @click="home()" text color="white">Login</v-btn>
+        </div>
+        
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" 
     app absolute temporary>
@@ -55,7 +68,7 @@
 <script>
 import router from "@/router"
     export default {
-        name: "Layout",
+        name: "header",
         data: () => ({
             drawer: true,
             left: false
@@ -63,13 +76,29 @@ import router from "@/router"
     methods: {
         home() {
             (window.location.pathname !== '/') ? router.push('/') : router.go(0)
-        }
+        },
+        totalCommunity(){
+            (window.location.pathname !== '/totalCommunity') ? router.push('/totalCommunity') : router.go(0)
+            }
     }
     }
 </script>
 
 <style scoped>
-dirotns{
-    fdsfdsfds;
+.gnb-left{
+    float: left;
+    width: 20%;
+    margin-left: 10px;
+    color: saddlebrown;
+}
+.nav-link {
+    color: #ffffff;
+}
+.gnb-center{
+    width: 40%;
+    color: black;
+}
+.gnb-rigth{
+    float: right;
 }
 </style>
