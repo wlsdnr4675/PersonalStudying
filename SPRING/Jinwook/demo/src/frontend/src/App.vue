@@ -3,3 +3,8 @@
     <router-view/>
   </v-content>
 </template>
+<script>
+export default {
+  
+}
+</script>

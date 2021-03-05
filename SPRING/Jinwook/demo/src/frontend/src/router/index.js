@@ -16,7 +16,7 @@ import VuetifyBoardListPaginationPage from "@/views/vuetifyPage/VuetifyBoardList
 import CrawlCategoryPage from "@/views/crawl/CrawlCategoryPage";
 
 Vue.use(VueRouter)
- 
+
 const routes = [
   {
     path: '/',

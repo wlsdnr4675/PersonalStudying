@@ -19,6 +19,8 @@ class Student2 implements Comparable<Student2>{
                 ", kor=" + kor +
                 ", eng=" + eng +
                 ", math=" + math +
+                ", getTotal="+getTotal()+
+                ", getAverage=" + getAverage()+
                 '}';
     }
 
@@ -42,6 +44,16 @@ class Student2 implements Comparable<Student2>{
     public int compareTo(Student2 s) {
         return this.name.compareTo(s.name);
     }
+
+//    밑고 같이 컴페어투를 쓸때는 파라미터객체 타입을 미리 확인해주는 것이 좋다
+//    public int compareTo(Object o){
+//        if(o instanceof Student2){
+//            Student2 tmp = (Student2) o;
+//            return name.compareTo(tmp.name);
+//        }else{
+//            return -1;
+//        }
+//    }
 }
 public class Exercise {
     public static void main(String[] args) {

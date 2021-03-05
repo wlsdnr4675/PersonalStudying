@@ -40,8 +40,10 @@ export default {
   name: "BoardList",
   props: {
     // 상호 전달하는 데이터 타입을 어레이라고 알려주는 것
+    // props의 에러 핸들링 위해 타입 지정
     boards: {
-      type: Array
+      type: Array,
+      requierd: true
     }
   },
   methods: {

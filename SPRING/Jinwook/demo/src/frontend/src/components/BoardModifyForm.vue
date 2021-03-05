@@ -54,10 +54,12 @@ export default {
     onSubmit () {
       /* 여기 this는 위 data(){}를 말함 */
       const { title, content } = this
+      // 자식 컴포넌트에서 밸류들을 바꾸고 싶다고 신호보내는것  : $emit
       this.$emit('submit', { title, content })
     }
   },
   created () {
+     // 이 컨포넌트의 titledㅔ  프롭스할때 넘어온 board의 title을 다시 할당을 하겠다.
     this.title = this.board.title
     this.content = this.board.content
   }

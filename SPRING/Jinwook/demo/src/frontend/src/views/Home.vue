@@ -1,5 +1,7 @@
 <template>
   <div class="home">
+    <Header></Header>
+    
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <div id="header">
       <router-link :to="{ name: 'Home' }"
@@ -39,6 +41,7 @@
       </router-link>
       <h2>This is an Home Page</h2>
     </div>
+    
   </div>
 </template>
 
@@ -51,6 +54,7 @@ import Vue from 'vue'
 // import cookies from 'vue-cookies'
 import { mapState, mapGetters, mapActions } from 'vuex'
 // Vue.use(cookies)
+
 export default {
   name: 'Home',
   data: function () {

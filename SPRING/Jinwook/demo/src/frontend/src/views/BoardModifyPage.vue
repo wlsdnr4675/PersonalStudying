@@ -26,6 +26,7 @@ export default {
   },
   created () {
     console.log('BoardModifyPage created()')
+    // 이 컨포넌트의 fetchBooard에 프롭스할때 넘어온 boardNo을 다시 할당을 하겠다.
     this.fetchBoard(this.boardNo)
       .catch(err => {
         alert(err.response.data.message)

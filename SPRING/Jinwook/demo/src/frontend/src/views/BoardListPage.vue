@@ -5,7 +5,8 @@
     <router-link :to="{ name: 'BoardRegisterPage' }">
       글쓰기
     </router-link>
-    <!-- 컴포넌트 보드리스트와 연결-->
+    <!-- board-list : 자식 컴포넌트 보드리스트와 연결-->
+    <!-- v-bind와 같음-->
     <board-list :boards="boards"/>
   </div>
 </template>
@@ -45,7 +46,7 @@ export default {
   },
 
   beforeMount: function () {
-    console.log("BoardListPage Before Mount: ")
+    console.log("BoardListPage Before Mount: "+ this.boards)
   },
   mounted () {
     this.fetchBoardList()
