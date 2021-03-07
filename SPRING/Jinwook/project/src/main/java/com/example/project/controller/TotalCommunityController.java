@@ -14,9 +14,9 @@
 // @CrossOrigin(origins = "http://localhost:8080", allowedHeaders = "*")
 // public class TotalCommunityController {
 
-//     @Autowired
-//     private TotalCommunityService service;
+// @Autowired
+// private TotalCommunityService service;
 
-//     @GetMapping("/{boardNo}")
-    
+// @GetMapping("/{boardNo}")
+
 // }
