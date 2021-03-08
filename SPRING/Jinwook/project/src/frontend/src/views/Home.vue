@@ -1,19 +1,8 @@
-<template #main>
+<template>
 <div>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
-    <h2>this is home babe</h2>
+    <h2>{{title}}</h2>
+    <h2>{{title}}</h2>
+    <h2>{{title}}</h2>
 </div>
 </template>
 
@@ -21,6 +10,11 @@
     export default {
         name: "Home",
         components: {},
+        data () {
+            return{
+                title: "ffdsfsd"
+            }
+        }
 
     
         
