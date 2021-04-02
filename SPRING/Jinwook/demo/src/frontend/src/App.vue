@@ -1,7 +1,7 @@
 <template>
-  <v-content>
+  <v-container>
     <router-view/>
-  </v-content>
+  </v-container>
 </template>
 <script>
 export default {
